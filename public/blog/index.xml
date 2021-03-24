@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on Nickcan Blog</title>
+    <link>https://nick411077.github.io/nickcan_blog/blog/</link>
+    <description>Recent content in Blog on Nickcan Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Wed, 24 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://nick411077.github.io/nickcan_blog/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SPWN Download Video</title>
+      <link>https://nick411077.github.io/nickcan_blog/blog/spwn/</link>
+      <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://nick411077.github.io/nickcan_blog/blog/spwn/</guid>
+      <description>一般使用Youtube-dl可以下在YT上的影片，那是有人已經幫我們寫好內碼了。
+在Spwn或其他網站上就要自行尋找HLS形式的擴展名為.m3u8的影片。
+下載Youtube-dl 接下來會教學 Windows/Linux/MacOS 下載方式
+Windows 下載 可以使用官網編譯好的.exe
+下載後創建資料夾放入youtube-dl.exe
+可以使用Path路徑 Path設定教學 在指令呼叫上會比較方便
+開啟PowerShell 運行以下代碼(這可以免除重新開機來讀取Path)
+$env:Path = [System.Environment]::GetEnvironmentVariable(&amp;#34;Path&amp;#34;,&amp;#34;Machine&amp;#34;) + &amp;#34;;&amp;#34; + [System.Environment]::GetEnvironmentVariable(&amp;#34;Path&amp;#34;,&amp;#34;User&amp;#34;) Linux 下載 開啟終端機使用apt下載
+sudo apt-get install youtube-dl -y
+MacOS 下載 開啟終端機使用brew下載
+brew install youtube-dl
+Python 下載 sudo pip install --upgrade youtube_dl
+執行Youtube-dl 執行 youtube-dl
+會出現以下訊息
+Usage: youtube-dl [OPTIONS] URL [URL...] youtube-dl: error: You must provide at least one URL. Type youtube-dl --help to see a list of all options.</description>
+    </item>
+    
+  </channel>
+</rss>
