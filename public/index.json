@@ -3,17 +3,17 @@
     "date": "",
     "description": "展示使用Youtube-dl 下載Spwn 影片",
     "body": "一般使用Youtube-dl可以下在YT上的影片，那是有人已經幫我們寫好內碼了。\n在Spwn或其他網站上就要自行尋找HLS形式的擴展名為.m3u8的影片。\n下載Youtube-dl 接下來會教學 Windows/Linux/MacOS 下載方式\nWindows 下載 可以使用官網編譯好的.exe\n下載後創建資料夾放入youtube-dl.exe\n可以使用Path路徑 Path設定教學 在指令呼叫上會比較方便\n開啟PowerShell 運行以下代碼(這可以免除重新開機來讀取Path)\n$env:Path = [System.Environment]::GetEnvironmentVariable(\u0026#34;Path\u0026#34;,\u0026#34;Machine\u0026#34;) + \u0026#34;;\u0026#34; + [System.Environment]::GetEnvironmentVariable(\u0026#34;Path\u0026#34;,\u0026#34;User\u0026#34;) Linux 下載 開啟終端機使用apt下載\nsudo apt-get install youtube-dl -y\nMacOS 下載 開啟終端機使用brew下載\nbrew install youtube-dl\nPython 下載 sudo pip install --upgrade youtube_dl\n執行Youtube-dl 執行 youtube-dl\n會出現以下訊息\nUsage: youtube-dl [OPTIONS] URL [URL...] youtube-dl: error: You must provide at least one URL. Type youtube-dl --help to see a list of all options. 就是成功了\n下載Chrome插件 我們下載使用Get Cookies.txt 來取得Spwn的Cookies\n開啟Spwn.jp 打開Spwn註冊或登入\n選擇你要的直播紀錄\n我們選擇 未来 × SPWN AR LIVE -into the Virtual World- 來做示範\n開啟時打開 開發人員工具即是F12，轉到 Network選項，在搜尋裡輸入m3u8\n會發現有index.m3u8和index_12.m3u8，開頭的index.m3u8是畫質選擇然而\nindex_12.m3u8是最高畫質的影片，所以只需要index_12.m3u8\n對index_12.m3u8按右鍵複製連接，這樣就拿到串流的連接了\n但是這樣直接丟到youtube-dl是沒辦法下載的，要搭配Cookies\n點選 Get cookies.txt 確認反白處有沒有跟你的網址路徑相識，這個很重要如果沒有請確認網址是否正確 確認後按下Export下載\n下載影片拉 打開PowerShell或終端機 Run\nyoutube-dl https://vod.spwn.jp/spwn-vod/200808-mirai/grp1/cam1_v1/index_12.m3u8 一定會收到403報錯，因為沒有帶入Cookies，還有串流連接每次都會不一樣且記不要複製我的喔：)\n帶入Cookies\nyoutube-dl --cookies {youcookies.txt} https://vod.spwn.jp/spwn-vod/200808-mirai/grp1/cam1_v1/index_12.m3u8 在\u0026ndash;cookies後面的{youcookies.txt} 是你的Cookies，按照路徑帶進來或者也可以直接把檔案拉到拉到終端就會把路徑帶上了\n如上圖就是這樣就是在下載了\n進階應用在VLC上觀看 適用Linux/MacOS 帶入 vlc 參數就可以如下圖在VLC上觀看\nyoutube-dl --cookies {youcookies.txt} -o - https://vod.spwn.jp/spwn-vod/200808-mirai/grp1/cam1_v1/index_12.m3u8 | vlc - ",
-    "ref": "/nickcan_blog/blog/spwn/"
+    "ref": "/blog/spwn/"
   },{
     "title": "About",
     "date": "",
     "description": "Nick Can 廢物大學生",
     "body": "關於我  就讀物聯網工程與應用系 自學Python3 努力學習成長中  關於罐頭的世界 記錄所學，記錄生活，努力修行，成就更好的自己\n大事記  2020.03.24 Hello Hugo!  使用的主題 Hugo Future Imperfect Slim\n更多關於我 Learn more and contribute on GitHub Twitter.\n",
-    "ref": "/nickcan_blog/about/"
+    "ref": "/about/"
   },{
     "title": "Contact",
     "date": "",
     "description": "",
     "body": "",
-    "ref": "/nickcan_blog/contact/"
+    "ref": "/contact/"
   }]

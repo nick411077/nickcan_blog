@@ -24,7 +24,7 @@ removeBlur = false
 可以使用官網編譯好的.exe  
 下載後創建資料夾放入youtube-dl.exe  
 可以使用Path路徑 [Path設定教學](http://kevinpaper.blogspot.com/2019/04/window10-win10.html) 在指令呼叫上會比較方便  
-![Path](/nickcan_blog/img/spwn/path01.png)  
+![Path](/img/spwn/path01.png)  
 
 開啟**PowerShell** 運行以下代碼(這可以免除重新開機來讀取Path)  
 
@@ -64,7 +64,7 @@ Type youtube-dl --help to see a list of all options.
 
 ## 下載Chrome插件
 
-![cookies](/nickcan_blog/img/spwn/cookies.png)  
+![cookies](/img/spwn/cookies.png)  
 我們下載使用[Get Cookies.txt](https://chrome.google.com/webstore/detail/get-cookiestxt/bgaddhkoddajcdgocldbbfleckgcbcid)
 來取得Spwn的Cookies
 
@@ -74,12 +74,12 @@ Type youtube-dl --help to see a list of all options.
 選擇你要的直播紀錄  
 我們選擇 [**未来 × SPWN AR LIVE -into the Virtual World-**](https://spwn.jp/events/200808-mirai/streaming) 來做示範  
 開啟時打開 開發人員工具即是**F12**，轉到 Network選項，在搜尋裡輸入**m3u8**  
-![stream](/nickcan_blog/img/spwn/stream.png)  
+![stream](/img/spwn/stream.png)  
 
 會發現有**index.m3u8**和**index_12.m3u8**，開頭的**index.m3u8**是畫質選擇然而  
 **index_12.m3u8**是最高畫質的影片，所以只需要**index_12.m3u8**  
 
-![copy-stream](/nickcan_blog/img/spwn/copy-stream.png)
+![copy-stream](/img/spwn/copy-stream.png)
 
 對**index_12.m3u8**按右鍵複製連接，這樣就拿到串流的連接了  
 但是這樣直接丟到**youtube-dl**是沒辦法下載的，要搭配Cookies  
@@ -89,7 +89,7 @@ Type youtube-dl --help to see a list of all options.
 確認反白處有沒有跟你的網址路徑相識，這個很重要如果沒有請確認網址是否正確
 確認後按下**Export**下載  
 
-![copy-cookies](/nickcan_blog/img/spwn/copy-cookies.png)
+![copy-cookies](/img/spwn/copy-cookies.png)
 
 ## 下載影片拉
 
@@ -99,7 +99,7 @@ Type youtube-dl --help to see a list of all options.
 youtube-dl https://vod.spwn.jp/spwn-vod/200808-mirai/grp1/cam1_v1/index_12.m3u8
 ```
 
-![error-youtube-dl](/nickcan_blog/img/spwn/error-youtube-dl.png)
+![error-youtube-dl](/img/spwn/error-youtube-dl.png)
 
 一定會收到403報錯，因為沒有帶入Cookies，還有串流連接每次都會不一樣且記不要複製我的喔：)  
 
@@ -110,7 +110,7 @@ youtube-dl https://vod.spwn.jp/spwn-vod/200808-mirai/grp1/cam1_v1/index_12.m3u8
 ```
 
 在--cookies後面的`{youcookies.txt}` 是你的Cookies，按照路徑帶進來或者也可以直接把檔案拉到拉到**終端**就會把路徑帶上了  
-![youtube-dl](/nickcan_blog/img/spwn/youtube-dl.png)
+![youtube-dl](/img/spwn/youtube-dl.png)
 
 如上圖就是這樣就是在下載了  
 
@@ -124,5 +124,5 @@ youtube-dl https://vod.spwn.jp/spwn-vod/200808-mirai/grp1/cam1_v1/index_12.m3u8
  youtube-dl --cookies {youcookies.txt} -o - https://vod.spwn.jp/spwn-vod/200808-mirai/grp1/cam1_v1/index_12.m3u8 | vlc -
 ```
 
-![vlc01](/nickcan_blog/img/spwn/vlc01.png)
-![vlc02](/nickcan_blog/img/spwn/vlc02.png)
+![vlc01](/img/spwn/vlc01.png)
+![vlc02](/img/spwn/vlc02.png)

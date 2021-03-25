@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nickcan Blog</title>
-    <link>https://nick411077.github.io/nickcan_blog/es/</link>
+    <link>https://nick411077.github.io/es/</link>
     <description>Recent content on Nickcan Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>es</language><atom:link href="https://nick411077.github.io/nickcan_blog/es/index.xml" rel="self" type="application/rss+xml" />
+    <language>es</language><atom:link href="https://nick411077.github.io/es/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

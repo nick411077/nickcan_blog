@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>spwn on Nickcan Blog</title>
-    <link>https://nick411077.github.io/nickcan_blog/tags/spwn/</link>
+    <link>https://nick411077.github.io/tags/spwn/</link>
     <description>Recent content in spwn on Nickcan Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Wed, 24 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://nick411077.github.io/nickcan_blog/tags/spwn/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://nick411077.github.io/tags/spwn/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SPWN Download Video</title>
-      <link>https://nick411077.github.io/nickcan_blog/blog/spwn/</link>
+      <link>https://nick411077.github.io/blog/spwn/</link>
       <pubDate>Wed, 24 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://nick411077.github.io/nickcan_blog/blog/spwn/</guid>
+      <guid>https://nick411077.github.io/blog/spwn/</guid>
       <description>一般使用Youtube-dl可以下在YT上的影片，那是有人已經幫我們寫好內碼了。
 在Spwn或其他網站上就要自行尋找HLS形式的擴展名為.m3u8的影片。
 下載Youtube-dl 接下來會教學 Windows/Linux/MacOS 下載方式
